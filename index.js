@@ -33,7 +33,7 @@ function printStateOnConsole() {
 
 function main () {
   const args = process.argv.slice(2)
-  if (args.length < 2 || !['sniff', 'playback'].includes(args[0])) {
+  if (args.length < 2 || !['sniff', 'playback'].includes(args[0])) { 
     printUsage()
   }
   if (args[0] === 'sniff') {
