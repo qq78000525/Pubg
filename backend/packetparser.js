@@ -97,7 +97,7 @@ const packetParserProto = {
       const isAck = buf.readBit()
       if (isAck) {
         const ackPacketId = buf.readInt(CONSTS.MAX_PACKETID)
-        // this should not happen, since in js, no signed int
+        // this should not happen, since in js, no signed int 
         if (ackPacketId == -1) {
           event.valid = false
           event.error = 'ackPacketId is -1'
