@@ -10,6 +10,6 @@ function slide(){
         }else{
             box1.style.display="none"; 
             box2.style.left='0px';                 //隐藏
-       } 
+       }  
 	
 }
