@@ -35,7 +35,7 @@ async function main () {
   let eventCount = 0
   let packetNumber = 0
   let invalidEvent = 0
-  let channelSet = new Set()
+  let channelSet = new Set() 
   let errCount = 0
   let totalBunchCount = 0
   pbyp.on('packet', packet => {
