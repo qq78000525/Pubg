@@ -35,7 +35,7 @@ vapp = new Vue({
     showItemAR: false,
     showItemSR: false,
     showItemHealth: false,
-    showItemThrow: false,
+    showItemThrow: false, 
     showItemAmmo: false,
     showItemAll: true,
 
