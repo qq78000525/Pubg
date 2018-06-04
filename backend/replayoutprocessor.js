@@ -32,7 +32,7 @@ const repLayoutProcessor = {
         evtType = EVENT_TYPES.TEAMUPDATE
         break
       case ACTOR_TYPES.CAR:
-      case ACTOR_TYPES.PARACHUTE:
+      case ACTOR_TYPES.PARACHUTE: 
       case ACTOR_TYPES.PLANE:
       case ACTOR_TYPES.DROPPED_ITEM_GROUP: // do we really need this? maybe just to get the location?
       //case ACTOR_TYPES.AIRDROP: // I think airdrop will not move, so don't care, loc update
