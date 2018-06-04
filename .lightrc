@@ -5,7 +5,7 @@
     "static/**"
   ],
   "proxy": "http://localhost:20086",
-  "proxypaths": [
+  "proxypaths": [ 
    "/api"
   ]
 }
