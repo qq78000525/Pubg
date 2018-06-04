@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>PUBG-网页雷达-v5.3版-开启 ing....</title>
+  <title>PUBG-网页雷达-v6.1版-开启 ing....</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/openlayers@4.6.4/dist/ol.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
@@ -33,8 +33,7 @@
   <div id="app"> 
     <div class="sidenav" id="navBox" style="display:none;">
       <section class="section">
-        <h1 class="title STYLE4">PUBG-网页雷达v5.3版</h1> 
-        <h1 class="title STYLE1">问题咨询QQ：907987</h1>
+        <h1 class="title STYLE4">PUBG-网页雷达v6.1版</h1> 
         <h1 class="title STYLE1">吃鸡率增加，碰面还是靠技术！</h1>	  
         <h1 class="title STYLE1">大吉大利，今晚吃鸡。</h1>   
         <!-- <div class="field is-grouped">
@@ -43,8 +42,8 @@
         </div> -->
         
         <label class="label">地图选择:</label>
-          <input type="radio" id="erangel" value="erangel" v-model="mapType"><label for="erangel">小海岛　</label>
-          <input type="radio" id="miramar" value="miramar" v-model="mapType"><label for="miramar">大沙漠　</label>
+          <input type="radio" id="erangel" value="erangel" v-model="mapType"><label for="erangel">海岛</label>
+          <input type="radio" id="miramar" value="miramar" v-model="mapType"><label for="miramar">沙漠</label>
           <br><br>
         <label class="label">地图设置:</label>
           <input type="checkbox" id="followme" v-model="followMe"><label for="followme">跟随玩家</label>
@@ -62,12 +61,13 @@
           <input type="checkbox" id="showArmor2" v-model="showArmor2"><label for="showArmor2">二级甲</label>
           <input type="checkbox" id="showArmor3" v-model="showArmor3"><label for="showBack3">三级甲</label>
           <br>
-          <input type="checkbox" id="showHead2" v-model="showHead2"><label for="showHead2">二级头</label>
-          <input type="checkbox" id="showHead3" v-model="showHead3"><label for="showBack3">三级头</label>
+          <input type="checkbox" id="showHead2" v-model="showHead2"><label for="showHead2">一级头</label>
+          <input type="checkbox" id="showHead3" v-model="showHead3"><label for="showBack3">二级头</label>
           <br><br>
           <input type="checkbox" id="showFirstAid" v-model="showFirstAid"><label for="showFirstAid">急救包</label>
           <input type="checkbox" id="showMedKit" v-model="showMedKit"><label for="showMedKit">医疗箱</label>
           <input type="checkbox" id="showDrink" v-model="showDrink"><label for="showDrink">饮料</label>
+          <input type="checkbox" id="showDrink" v-model="showDrink"><label for="showDrink">肾上腺素</label>
           <br>
           <input type="checkbox" id="showGrenade" v-model="showGrenade"><label for="showGrenade">手雷</label>
           <input type="checkbox" id="showSmokeBomb" v-model="showSmokeBomb"><label for="showSmokeBomb">烟雾　</label>
@@ -92,16 +92,15 @@
           <input type="checkbox" id="showM16A4" v-model="showM16A4"><label for="showM16A4">M16A4</label>
           <input type="checkbox" id="showSCAR" v-model="showSCAR"><label for="showSCAR">SCAR</label>
           <input type="checkbox" id="showHK416" v-model="showHK416"><label for="showHK416">M416</label>
-          <input type="checkbox" id="showAK47" v-model="showAK47"><label for="showAK47">AKM</label>
+          <input type="checkbox" id="showAK47" v-model="showAK47"><label for="showAK47">AKM</label>        
           <br>
           <input type="checkbox" id="showMini14" v-model="showMini14"><label for="showMini14">Mini14</label>
           <input type="checkbox" id="showSKS" v-model="showSKS"><label for="showSKS">SKS</label>
           <input type="checkbox" id="showKar98k" v-model="showKar98k"><label for="showKar98k">98k</label>
+          <input type="checkbox" id="showAK47" v-model="showAK47"><label for="showAK47">M24</label>
           <input type="checkbox" id="showPan" v-model="showPan"><label for="showPan">平底锅</label>
         <hr>
         <label class="label">刷新率:默认60FPS</label>
-          <a class="button is-small" @click="setFPS(5)">fps5</a>
-          <a class="button is-small" @click="setFPS(15)">fps15</a>
           <a class="button is-small" @click="setFPS(30)">FSP 30</a>
           <a class="button is-small" @click="setFPS(60)">FSP 60</a>
           <br><br>
