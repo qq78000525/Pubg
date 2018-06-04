@@ -31,7 +31,7 @@ const bunchStash = {
     this._actors.fill(undefined)
   },
 
-  // return event[] or null
+  // return event[] or null 
   feedEvent (inputEvent) {
     if (inputEvent.type !== CONSTS.EventTypes.UEBUNCHES) {
       //logger.error('Must input UEBUNCHES event')
