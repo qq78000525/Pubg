@@ -30,7 +30,7 @@ function processPlayer (buf, actor, repObj, waitingHandle, dataOut, iteration) {
     case 5:
       [ownerGuid, owner] = buf.readObject()
       dataOut.playerOwner = ownerGuid // seems never hit this
-      break
+      break 
     case 6:
       const movement = buf.readMovement(true /* isMoving */, true /* isPlayer */)
 	  //console.log(movement);
