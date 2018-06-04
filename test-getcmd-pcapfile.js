@@ -35,7 +35,7 @@ function main () {
     eventCountMap.set(type, newValue)
   }
   pbyp.on('packet', packet => {
-    // packet contains { header, data }
+    // packet contains { header, data } 
     packetNumber++
     let result = null
     try {
