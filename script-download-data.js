@@ -34,6 +34,6 @@ async function main () {
 main().catch(err => {
   console.log('unexpected error', err)
   cleanup.then(() => {
-    process.exit(2)
+    process.exit(2) 
   })
 })
