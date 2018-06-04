@@ -36,7 +36,7 @@ const ueBufferProto = {
   },
   ended () {
     return this.remainingBits <= 0
-  },
+  }, 
   remainingBytes () {
     return (this.remainingBits + 7) >> 3
   },
