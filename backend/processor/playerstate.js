@@ -34,7 +34,7 @@ function processPlayer (buf, actor, repObj, waitingHandle, dataOut, i) {
       dataOut.playerName = buf.readString()
       break
     case 19:
-      buf.readUInt32() // playerID
+      buf.readUInt32() // playerID 
       break
     case 20:
       buf.readBit() // bIsSpectator
