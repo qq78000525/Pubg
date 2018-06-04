@@ -34,7 +34,7 @@ const gameState = {
   playerStateMap: new Map(), // playerStateGuid -> playerStateObj
   showingPlayers: new Map(), // guid -> player object
 
-  apawns: [], // store the apawn objects { T: ACTOR_TYPE, ... }
+  apawns: [], // store the apawn objects { T: ACTOR_TYPE, ... } 
   apawnsMap: new Map(), // guid -> apawn objects
   showingAPawns: new Map(), // guid -> apawn objects
 
