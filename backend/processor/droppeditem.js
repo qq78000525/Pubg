@@ -35,7 +35,7 @@ function processDroppedItem (buf, actor, repObj, waitingHandle, dataOut) {
       buf.readBit() // bReplicatesAttachment
       break
     case 8:
-      buf.readBit() // bAbsoluteLocation
+      buf.readBit() // bAbsoluteLocation 
       break
     case 9:
       buf.readBit() // bAbsoluteRotation
