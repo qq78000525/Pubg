@@ -36,7 +36,7 @@ const UEGUIDCache = {
     // }
     //logger.debug({ guid: ueguid, owner: newObj[1], path: newObj[0] }, 'registered guid cache')
   },
-  registerUEGUIDClient (ueguid, pathName) {
+  registerUEGUIDClient (ueguid, pathName) { 
     const existing = this._cacheMap.get(ueguid)
     if (existing != null) {
       this._cacheMap.delete(ueguid)
