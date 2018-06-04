@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "欢迎使用网页雷达一键免费脚本"
-echo "即将搭建的是2018年5月3日版本"
+echo "即将搭建的是2018年6月1日版本"
 echo "请输入你的内网ip" 
 read -p "内网ip： " ip
 cp /root/PUBGYS/restart.sh /root/restart.sh
